@@ -98,9 +98,8 @@ export function ProductGrid({ products, onEdit, onDelete, onStatusChange }: Prod
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <DollarSign className="h-4 w-4 text-muted-foreground" />
                 <span className="font-semibold text-card-foreground">
-                  ${product.price.toFixed(2)}/{product.unit}
+                  ₹{product.price.toFixed(2)}/{product.unit}
                 </span>
               </div>
               <div className="flex items-center gap-2">
